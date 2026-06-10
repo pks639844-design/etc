@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0">
+	<title>이너로지</title>
+	<meta name='description' content='이너로지는 이노시톨과 락토페린을 담은 여성 맞춤 이너케어 분말 스틱입니다.' />
+	<style>
+		body { font-family: 'Noto Sans KR', sans-serif; }
+		/* 배경 동영상 섹션 */
+		#s20250829601f0fb291987 {
+			position: relative;
+			overflow: hidden;
+		}
+		#s20250829601f0fb291987 .video-bg-wrap {
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			overflow: hidden;
+			z-index: 0;
+		}
+		#s20250829601f0fb291987 .video-bg-wrap video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+		#s20250829601f0fb291987 .section_bg_color {
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			z-index: 1;
+		}
+		#s20250829601f0fb291987 main {
+			position: relative;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body class="doz_sys">
+
+<!-- ====================================================
+     섹션: 첫 번째 히어로 섹션 (배경 동영상으로 변경)
+     변경사항: background-image URL → <video> 태그
+     동영상 파일: hf_20260608_070854_4f7593ec-272e-4aed-a8bc-6b5f23566388.mp4
+     ==================================================== -->
+<div doz_type="section"
+     class="section_wrap pc_section section_first _section_first mobile_section_first side_basic"
+     id="s20250829601f0fb291987"
+     style="background-color:rgba(222, 97, 97, 0.1);">
+
+  <!-- 배경 동영상 (기존 background-image 대체) -->
+  <div class="video-bg-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="hf_20260608_070854_4f7593ec-272e-4aed-a8bc-6b5f23566388.mp4" type="video/mp4">
+      <!-- 동영상을 지원하지 않는 브라우저용 폴백 -->
+      브라우저가 video 태그를 지원하지 않습니다.
+    </video>
+  </div>
+
+  <!-- 색상 오버레이 (기존 유지) -->
+  <div class="section_bg_color _section_bg_color"
+       style="background-color:rgba(222, 97, 97, 0.1);"></div>
+
+  <!-- 콘텐츠 영역 -->
+  <main>
+    <div doz_type="inside" class="inside">
+      <div doz_type="row" doz_grid="12" class="doz_row">
+        <div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+          <div doz_type="widget" id="w20250829a5c58bc826a01">
+            <div class="widget padding" data-height="285">
+              <div id="padding_w20250829a5c58bc826a01"
+                   style="width:100%; min-height:1px; height:285px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- /히어로 섹션 끝 -->
+
+<!--
+  ※ 사용 안내
+  1. 위 <video> 태그의 src 경로를 실제 서버에 업로드된 mp4 경로로 수정하세요.
+     예: src="/uploads/hf_20260608_070854_4f7593ec-272e-4aed-a8bc-6b5f23566388.mp4"
+  
+  2. 아임웹 사용 시: 관리자 페이지 → 디자인 편집 → 해당 섹션 선택
+     → 배경 → 동영상 탭에서 파일을 업로드하는 방법을 권장합니다.
+  
+  3. 원본 전체 HTML에 적용하려면 아래 원본 코드에서
+     id="s20250829601f0fb291987" 섹션 안의
+     <div class="section_bg _section_bg _interactive_bg" ...>
+     태그를 위의 video-bg-wrap 코드로 교체하세요.
+-->
+
+</body>
+</html>
