@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#a01a1a"/>
+<meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes" />
+<title>이너로지</title>
+<meta name='application-name' content='이너로지'/>
+<meta name='description' content='이너로지는 이노시톨과 락토페린을 담은 여성 맞춤 이너케어 분말 스틱입니다.' />
+<meta property='og:title' content='이너로지' />
+<meta property='og:description' content='이너로지는 이노시톨과 락토페린을 담은 여성 맞춤 이너케어 분말 스틱입니다.' />
+<meta property='og:image' content="https://cdn.imweb.me/upload/S202503254373ad402fcd1/76c939d3b2320.png" />
+<meta name='keywords' content='이너로지,이노시톨,락토페린,여성 이너케어,여성 건강 스틱,분말 스틱,이너케어 보충제' />
+<link rel="canonical" href="https://innergreen.co.kr/" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== 기본 리셋 ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans KR', sans-serif; background: #f4f0ea; color: #212121; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ===== 상단 공지 바 ===== */
+#top-notice-bar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 15px;
+  height: 28px;
+  line-height: 1.6;
+}
+#top-notice-bar a { color: #fff; text-decoration: underline; }
+
+/* ===== 헤더 ===== */
+#doz_header_wrap {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f4f0ea;
+  border-bottom: 1px solid #e7e7e7;
+}
+.header-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 91px;
+}
+.header-nav a {
+  font-size: 14px;
+  color: #000;
+  margin-right: 15px;
+  font-family: 'Droid Serif', serif;
+}
+.header-nav a:hover { color: #660707; }
+.header-logo img { height: 50px; }
+.header-utils a {
+  font-size: 12px;
+  color: #000;
+  margin-left: 10px;
+}
+.header-utils a:hover { color: #660707; }
+
+/* ===== 모바일 헤더 ===== */
+@media (max-width: 767px) {
+  .header-inner { padding: 6px 15px; height: 60px; }
+  .header-nav { display: none; }
+  .header-utils .util-text { display: none; }
+  .header-logo img { height: 36px; }
+}
+
+/* ===== 히어로 섹션 (배경 동영상) ===== */
+#hero-section {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(222, 97, 97, 0.1);
+  height: 375px;
+}
+#hero-section .video-bg-wrap {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+#hero-section .video-bg-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#hero-section .section-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(222, 97, 97, 0.1);
+  z-index: 1;
+}
+#hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+/* ===== SHOP 타이틀 섹션 ===== */
+#shop-title-section {
+  background: transparent;
+  padding: 109px 0 54px;
+  text-align: center;
+}
+#shop-title-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #032916;
+}
+#shop-title-section p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #696969;
+  margin-top: 6px;
+}
+
+/* ===== 상품 리스트 섹션 ===== */
+#shop-list-section {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 30px 15px 109px;
+}
+.shop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.shop-item-card {
+  width: calc(50% - 7px);
+  max-width: 469px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.shop-item-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.shop-item-card a { display: block; }
+.shop-item-card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.shop-item-detail {
+  padding: 16px;
+  text-align: center;
+}
+.shop-item-detail h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #363636;
+  margin-bottom: 8px;
+}
+.shop-item-detail .price {
+  font-size: 19px;
+  color: #363636;
+  font-weight: 500;
+}
+.shop-item-detail .sale-price {
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+.shop-item-detail .badges {
+  margin-top: 6px;
+}
+.shop-item-detail .badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.badge.sale { background: #660707; color: #fff; }
+.badge.best { color: #dc3545; border: 1px solid #dc3545; }
+.badge.hot  { border: 1px solid #999; color: #999; }
+.badge.delivery { border: 1px solid #999; color: #999; }
+
+@media (max-width: 767px) {
+  .shop-item-card { width: calc(50% - 7px); }
+  #shop-title-section { padding: 60px 0 30px; }
+  #shop-title-section h1 { font-size: 26px; }
+  #shop-title-section p { font-size: 14px; }
+  #hero-section { height: 250px; }
+}
+
+/* ===== 푸터 - PC ===== */
+#footer-pc {
+  background: #f4f0ea;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 41px 0 37px;
+}
+.footer-inner-pc {
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 150px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.footer-logo-area img { width: 150px; margin-bottom: 20px; }
+.footer-info { flex: 1; }
+.footer-info p { font-size: 11px; color: #555; line-height: 1.8; }
+.footer-info strong { color: #222; }
+.footer-links a { font-size: 12px; color: #555; margin-right: 8px; }
+.footer-links a:hover { color: #a01a1a; }
+.footer-menu { min-width: 120px; }
+.footer-menu ul { list-style: none; }
+.footer-menu ul li { margin-bottom: 6px; }
+.footer-menu ul li a { font-size: 13px; color: #222; }
+.footer-menu ul li a:hover { color: #a01a1a; }
+.footer-menu ul ul { padding-left: 10px; margin-top: 4px; }
+.footer-menu ul ul li a { font-size: 11px; color: #666; }
+.footer-escrow img { width: 250px; }
+.footer-copy {
+  background: #f4f0ea;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  padding: 10px 0 20px;
+  border-top: 1px solid transparent;
+}
+
+/* ===== 푸터 - 모바일 ===== */
+@media (max-width: 767px) {
+  #footer-pc { display: none; }
+  #footer-mobile {
+    background: #f4f0ea;
+    padding: 20px 15px 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+  #footer-mobile .footer-mobile-logo img { width: 120px; margin-bottom: 16px; }
+  #footer-mobile p { font-size: 11px; color: #555; line-height: 1.8; }
+  #footer-mobile .footer-links a { font-size: 12px; color: #555; margin-right: 8px; }
+  #footer-mobile .footer-escrow { margin: 12px 0; }
+  #footer-mobile .footer-escrow img { width: 200px; }
+  .footer-copy { font-size: 10px; padding: 8px 0 12px; }
+}
+@media (min-width: 768px) {
+  #footer-mobile { display: none; }
+}
+
+/* ===== 카카오 채널 버튼 ===== */
+#kakao-talk-channel-chat-button {
+  position: fixed;
+  z-index: 9999;
+  right: 32px;
+  bottom: 32px;
+}
+#kakao-talk-channel-chat-button img {
+  border-radius: 64px;
+  box-shadow: 0 8px 28px -6px rgba(24,39,75,0.12), 0 18px 88px -4px rgba(24,39,75,0.14);
+  width: 60px;
+}
+@media (max-width: 767px) {
+  #kakao-talk-channel-chat-button { right: 16px; bottom: 16px; }
+}
+</style>
+</head>
+<body class="doz_sys">
+
+<!-- ===== 상단 공지 바 ===== -->
+<div id="top-notice-bar">
+  <a href="https://innergreen.co.kr/?coupon=C2DD9CE3BB52B">신규 회원을 위한 2,000원 가입 축하 쿠폰&nbsp;</a>증정&nbsp;
+</div>
+
+<!-- ===== 헤더 ===== -->
+<header id="doz_header_wrap">
+  <div class="header-inner">
+    <!-- 왼쪽 내비게이션 -->
+    <nav class="header-nav">
+      <a href="/idx4" target="_blank">이너로지</a>
+      <a href="/main">브랜드</a>
+      <a href="/community">고객센터</a>
+    </nav>
+
+    <!-- 로고 -->
+    <div class="header-logo">
+      <a href="/main">
+        <img src="https://cdn.imweb.me/thumbnail/20250911/ddbd2f5e44299.png" alt="이너로지 로고">
+      </a>
+    </div>
+
+    <!-- 오른쪽 유틸 -->
+    <div class="header-utils">
+      <a href="/login" class="util-text">로그인</a>
+      <a href="/site_join_pattern_choice" class="util-text">회원가입</a>
+      <a href="/shop_cart" class="util-text">장바구니</a>
+      <a href="/login" class="util-text">마이페이지</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 히어로 섹션 - 배경 동영상 적용 ===== -->
+<!--
+  ★ 수정된 부분 ★
+  기존: background-image:url('https://cdn.imweb.me/thumbnail/20250909/d6a8517b0ce55.jpg')
+  변경: <video> 태그로 동영상 배경 적용
+  동영상 파일: hf_20260608_070854_4f7593ec-272e-4aed-a8bc-6b5f23566388.mp4
+-->
+<section id="hero-section">
+  <!-- 배경 동영상 -->
+  <video autoplay muted loop playsinline>
+    <source
+        src="https://pks639844-design.github.io/etc/hf_20260608_070854_4f7593ec-272e-4aed-a8bc-6b5f23566388.mp4"
+        type="video/mp4">
+</video>
+  <!-- 색상 오버레이 -->
+  <div class="section-overlay"></div>
+  <!-- 콘텐츠 (필요시 텍스트/버튼 추가) -->
+  <div class="hero-content"></div>
+</section>
+
+<!-- ===== SHOP 타이틀 섹션 ===== -->
+<section id="shop-title-section">
+  <h1>SHOP</h1>
+  <p>가장 인기 있는 제품이에요</p>
+</section>
+
+<!-- ===== 상품 리스트 섹션 ===== -->
+<section id="shop-list-section">
+  <div class="shop-grid">
+    <!-- 상품 카드 -->
+    <div class="shop-item-card">
+      <a href="/?idx=4">
+        <img src="https://cdn-optimized.imweb.me/upload/S202503254373ad402fcd1/11aa7387e063a.jpg?w=800" alt="이너로지">
+        <div class="shop-item-detail">
+          <h2>이너로지</h2>
+          <div>
+            <span class="price">39,700원</span>
+            <span class="sale-price">64,000원</span>
+          </div>
+          <div class="badges">
+            <span class="badge sale">SALE</span>
+            <span class="badge best">BEST</span>
+            <span class="badge hot">HOT</span>
+            <span class="badge delivery">오늘출발</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 푸터 - PC ===== -->
+<footer id="footer-pc">
+  <div class="footer-inner-pc">
+    <!-- 로고 -->
+    <div class="footer-logo-area">
+      <img src="https://cdn.imweb.me/thumbnail/20250911/0b9a91b6a4f0d.png" alt="이너로지 로고">
+    </div>
+
+    <!-- 회사 정보 -->
+    <div class="footer-info">
+      <p><strong>주식회사 그린</strong></p>
+      <p>CEO : miyoung yeom<br>
+         PHONE : 070-8018-7189 | MAIL : green@innerosy.com<br>
+         ADDRESS : 87, Yesansaneopdanji-ro, Oga-myeon, Yesan-gun, Chungcheongnam-do<br>
+         REGISTRATION : 683-87-03346
+         <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=683-87-03346" target="_blank">[Registration Confirmation]</a><br>
+         MAIL ORDER LICENSE : 제 2025-충남예산-00033호
+      </p>
+      <br>
+      <div class="footer-links">
+        <a href="/?mode=policy">이용약관</a>
+        <a href="/?mode=privacy">개인정보처리방침</a>
+      </div>
+      <br>
+      <div class="footer-escrow">
+        <a href="https://partner.kcp.co.kr/escrow/popup?site_cd=IM5M3" target="_blank">
+          <img src="https://cdn.imweb.me/upload/S202503254373ad402fcd1/cf8be6c5181b1.gif" alt="에스크로 인증">
+        </a>
+      </div>
+    </div>
+
+    <!-- 사이트 메뉴 -->
+    <div class="footer-menu">
+      <ul>
+        <li><a href="/idx4">이너로지</a></li>
+        <li><a href="/main">브랜드</a></li>
+        <li>
+          <a href="/community">고객센터</a>
+          <ul>
+            <li><a href="/notice">공지사항</a></li>
+            <li><a href="/ask">문의하기</a></li>
+            <li><a href="/FAQ">자주 묻는 질문</a></li>
+            <li><a href="/24">리뷰</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 푸터 - 모바일 ===== -->
+<footer id="footer-mobile">
+  <div class="footer-mobile-logo">
+    <img src="https://cdn.imweb.me/thumbnail/20250911/b493e699c5f94.png" alt="이너로지 로고">
+  </div>
+  <p><strong>주식회사 그린</strong><br>
+     CEO : miyoung yeom<br>
+     PHONE : 070-8018-7189 | MAIL : green@innerosy.com<br>
+     ADDRESS : 87, Yesansaneopdanji-ro, Oga-myeon, Yesan-gun, Chungcheongnam-do<br>
+     REGISTRATION : 683-87-03346<br>
+     MAIL ORDER LICENSE : 제 2025-충남예산-00033호
+  </p>
+  <br>
+  <div class="footer-links">
+    <a href="/?mode=policy">이용약관</a>
+    <a href="/?mode=privacy">개인정보처리방침</a>
+  </div>
+  <div class="footer-escrow">
+    <a href="https://partner.kcp.co.kr/escrow/popup?site_cd=IM5M3" target="_blank">
+      <img src="https://cdn.imweb.me/upload/S202503254373ad402fcd1/1715c91a8e936.gif" alt="에스크로 인증">
+    </a>
+  </div>
+</footer>
+
+<!-- ===== 카피라이트 ===== -->
+<div class="footer-copy">
+  Copyright ⓒ 2025 innerosy All rights reserved.
+</div>
+
+<!-- ===== 카카오 채널 버튼 ===== -->
+<a id="kakao-talk-channel-chat-button" href="https://pf.kakao.com/_vwjen/chat" target="_blank">
+  <img src="https://vendor-cdn.imweb.me/images/kakao-talk-button-default.svg" alt="카카오톡 채널 채팅하기">
+</a>
+
+</body>
+</html>
